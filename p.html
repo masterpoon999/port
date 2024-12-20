@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Performance</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm poonpoon, a passionate web developer skilled in HTML, CSS, JavaScript, and more. I love creating beautiful and functional websites that improve user experience.</p>
+                </div>
+                <div class="about-image">
+                    <img src="tomas.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-content">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Kali linux</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Performance</h2>
+            <div class="projects-content">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="rps.png" alt="Project 1" />
+                    </div>
+                    <div class="project-info">
+                        <h3>rps game</h3>
+                        <p>A brief description of project 1. This is where you can describe the features and the technology used in the project.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="cv2.png" alt="Project 2" />
+                    </div>
+                    <div class="project-info">
+                        <h3>open cv</h3>
+                        <p>A brief description of project 2. This project showcases your ability to work with different tech stacks or frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <p id="form-response"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 poonpoon</p>
+        </div>
+    </footer>
+
+    <script src="p.js"></script>
+</body>
+</html>

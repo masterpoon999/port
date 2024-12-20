@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* ฟ้าอ่อน */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366; /* น้ำเงินเข้ม */
+    color: white;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #12a7e2; /* ฟ้าอ่อน */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 32px;
+    color: #003366;  /* ฟ้าเข้ม */
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#about .about-image {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+}
+
+#about .about-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 4px solid #003366; /* ฟ้าอ่อน */
+}
+
+/* Skills Section */
+#skills .skills-content ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#skills .skills-content li {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+#projects .projects-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#projects .project {
+    flex: 1;
+    min-width: 280px;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#projects .project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#projects .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8); /* ปรับความสว่าง */
+}
+
+#projects .project-info {
+    padding: 20px;
+}
+
+#projects .project-info h3 {
+    font-size: 24px;
+    color: #003366; /* ฟ้าเข้ม */
+    margin-bottom: 10px;
+}
+
+#projects .project-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #003366; /* น้ำเงินเข้ม */
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #87CEEB; /* ฟ้าอ่อน */
+    border-radius: 8px;
+    background-color: #ffffff; /* ขาว */
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #003366; 
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#contact-form button:hover {
+    background-color: #003366; 
+}
+
+/* Footer */
+footer {
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
